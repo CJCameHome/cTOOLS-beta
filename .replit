@@ -1,0 +1,9 @@
+entrypoint = "video_downloader.sh"
+modules = ["bash"]
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["bash", "video_downloader.sh"]
+deploymentTarget = "cloudrun"
